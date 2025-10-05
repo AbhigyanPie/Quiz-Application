@@ -1,6 +1,7 @@
 # Quiz Application Backend API
 
 A comprehensive RESTful API for managing quizzes with robust validation, multiple question types, and scoring functionality.
+![4](https://github.com/user-attachments/assets/e1199ec6-a36f-446d-8129-4397588a9fda)
 
 ##  Features
 
@@ -515,4 +516,5 @@ curl -X POST http://localhost:3000/api/quizzes/{quizId}/submit \
 ---
 
 **Built with ❤️ using Node.js and Express**
+
 
