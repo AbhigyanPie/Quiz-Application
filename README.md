@@ -414,19 +414,30 @@ npm run test:watch
 ## Project Structure
 
 ```
-quiz-application-backend/
-├── server.js                 # Main server configuration
-├── package.json              # Dependencies and scripts
-├── models/
-│   └── quiz.model.js        # Quiz and Question models
-├── services/
-│   └── quiz.service.js      # Business logic layer
-├── controllers/
-│   └── quiz.controller.js   # Request handlers
-├── routes/
-│   └── quiz.routes.js       # API routes
-└── tests/
-    └── quiz.service.test.js # Comprehensive tests
+Quiz_api/
+├── backend/
+│   ├── controllers/
+│   │   └── quiz.controller.js
+│   ├── models/
+│   │   └── quiz.model.js
+│   ├── routes/
+│   │   └── quiz.routes.js
+│   ├── services/
+│   │   └── quiz.service.js
+│   ├── tests/
+│   │   └── quiz.service.test.js
+│   ├── package.json
+│   └── server.js
+│
+└── frontend/
+    ├── public/
+    │   └── index.html
+    ├── src/
+    │   ├── App.jsx
+    │   ├── App.css
+    │   ├── index.js
+    │   └── index.css
+    └── package.json
 ```
 
 ## Design Patterns
@@ -504,3 +515,4 @@ curl -X POST http://localhost:3000/api/quizzes/{quizId}/submit \
 ---
 
 **Built with ❤️ using Node.js and Express**
+
